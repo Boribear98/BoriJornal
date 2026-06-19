@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>BoriJournal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoriJournal</title>
+
+<style>
+
+body {
+    margin: 0;
+    background-color: #e8dfcf;
+    color: #1f1f1f;
+    font-family: Georgia, serif;
+}
+
+header {
+    background-color: #e2d7c4;
+    border-bottom: 1px solid #b8a58d;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #5d5142;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 110px);
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #d8ccb8;
+    border-right: 1px solid #b8a58d;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-family: "Courier New", monospace;
+    color: #4d4133;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    line-height: 1.8;
+}
+
+.content h2 {
+    font-family: "Courier New", monospace;
+    margin-top: 0;
+}
+
+.quote {
+    border-left: 3px solid #b8a58d;
+    padding-left: 15px;
+    color: #555;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+.footer-note {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+</style>
 </head>
+
 <body>
-  <h1>BoriJournal</h1>
-  <p>Essays, reflections, and philosophical writing.</p>
+
+<header>
+    <h1>BoriJournal</h1>
+
+    <p>
+        A personal archive of essays, poetry, philosophy, history,
+        and creative work.
+    </p>
+</header>
+
+<div class="container">
+
+    <nav class="sidebar">
+
+        <h3>Contents</h3>
+
+        <a href="#">📁 Personal Essays</a>
+
+        <a href="#">📁 Professional Essays</a>
+
+        <a href="#">📁 Poems</a>
+
+        <a href="#">📁 Creative Work</a>
+
+        <a href="#">📁 Contact</a>
+
+    </nav>
+
+    <main class="content">
+
+        <h2>Welcome</h2>
+
+        <p>
+            Welcome to BoriJournal.
+        </p>
+
+        <p>
+            This website serves as a digital commonplace book:
+            a collection of essays, reflections, research,
+            poetry, and creative projects gathered over time.
+        </p>
+
+        <div class="quote">
+            "I write to understand what I think."
+        </div>
+
+        <p>
+            Some writings are personal.
+            Others are academic.
+            Some are unfinished thoughts,
+            observations, poems, or experiments.
+        </p>
+
+        <p>
+            Use the folders on the left to browse the archive.
+        </p>
+
+        <div class="footer-note">
+            Founded 2026 • Puerto Rico
+        </div>
+
+    </main>
+
+</div>
+
 </body>
 </html>
